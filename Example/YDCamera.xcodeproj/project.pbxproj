@@ -43,9 +43,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		74D30FF48566E9B93FD4B644 /* Pods_YDCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDCamera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E361432A73F1DD240D742E /* YDCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YDCamera.podspec; path = ../YDCamera.podspec; sourceTree = "<group>"; };
-		8DA5EF327DD13649FABC5755 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AFB326AF8E60C0FFE6F5AD0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		76E361432A73F1DD240D742E /* YDCamera.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDCamera.podspec; path = ../YDCamera.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DA5EF327DD13649FABC5755 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AFB326AF8E60C0FFE6F5AD0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E133D40F1A7742AB25FB8CC0 /* Pods-YDCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDCamera_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDCamera_Example/Pods-YDCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +69,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1509779F29AEF24E002F9FA2 /* YDCamera */ = {
+			isa = PBXGroup;
+			children = (
+				150977A029AEF24E002F9FA2 /* Classes */,
+				150977A229AEF24E002F9FA2 /* Assets */,
+			);
+			name = YDCamera;
+			path = ../YDCamera;
+			sourceTree = "<group>";
+		};
+		150977A029AEF24E002F9FA2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		150977A229AEF24E002F9FA2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		60570CB91A6030B028B02AB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +101,13 @@
 				02325419C629770288A3451F /* Pods-YDCamera_Tests.debug.xcconfig */,
 				2E57F80500EF68BEF3FD527E /* Pods-YDCamera_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1509779F29AEF24E002F9FA2 /* YDCamera */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for YDCamera */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -227,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
