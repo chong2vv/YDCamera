@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150977BB29AF2794002F9FA2 /* YDCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150977B529AF2794002F9FA2 /* YDCameraManager.swift */; };
+		150977BC29AF2794002F9FA2 /* YDPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150977B629AF2794002F9FA2 /* YDPhotoLibrary.swift */; };
+		150977BD29AF2794002F9FA2 /* YDCameraEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150977B729AF2794002F9FA2 /* YDCameraEnum.swift */; };
+		150977C029AF2906002F9FA2 /* YDImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150977BE29AF2906002F9FA2 /* YDImageViewController.swift */; };
+		150977C129AF2906002F9FA2 /* YDCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150977BF29AF2906002F9FA2 /* YDCameraViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +35,11 @@
 /* Begin PBXFileReference section */
 		00C6112ED84ED4260BE127E7 /* Pods-YDCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDCamera_Example.release.xcconfig"; path = "Target Support Files/Pods-YDCamera_Example/Pods-YDCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		02325419C629770288A3451F /* Pods-YDCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDCamera_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDCamera_Tests/Pods-YDCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		150977B529AF2794002F9FA2 /* YDCameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCameraManager.swift; sourceTree = "<group>"; };
+		150977B629AF2794002F9FA2 /* YDPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDPhotoLibrary.swift; sourceTree = "<group>"; };
+		150977B729AF2794002F9FA2 /* YDCameraEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCameraEnum.swift; sourceTree = "<group>"; };
+		150977BE29AF2906002F9FA2 /* YDImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDImageViewController.swift; sourceTree = "<group>"; };
+		150977BF29AF2906002F9FA2 /* YDCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDCameraViewController.swift; sourceTree = "<group>"; };
 		2E57F80500EF68BEF3FD527E /* Pods-YDCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDCamera_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDCamera_Tests/Pods-YDCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3884742E306049FAEA3F499D /* Pods_YDCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDCamera_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* YDCamera_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDCamera_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,24 +79,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1509779F29AEF24E002F9FA2 /* YDCamera */ = {
+		150977B129AF2794002F9FA2 /* YDCamera */ = {
 			isa = PBXGroup;
 			children = (
-				150977A029AEF24E002F9FA2 /* Classes */,
-				150977A229AEF24E002F9FA2 /* Assets */,
+				150977B229AF2794002F9FA2 /* Classes */,
+				150977B829AF2794002F9FA2 /* Assets */,
 			);
 			name = YDCamera;
 			path = ../YDCamera;
 			sourceTree = "<group>";
 		};
-		150977A029AEF24E002F9FA2 /* Classes */ = {
+		150977B229AF2794002F9FA2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				150977B529AF2794002F9FA2 /* YDCameraManager.swift */,
+				150977B629AF2794002F9FA2 /* YDPhotoLibrary.swift */,
+				150977B729AF2794002F9FA2 /* YDCameraEnum.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		150977A229AEF24E002F9FA2 /* Assets */ = {
+		150977B829AF2794002F9FA2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -107,7 +120,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				1509779F29AEF24E002F9FA2 /* YDCamera */,
+				150977B129AF2794002F9FA2 /* YDCamera */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for YDCamera */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -131,6 +144,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				150977BF29AF2906002F9FA2 /* YDCameraViewController.swift */,
+				150977BE29AF2906002F9FA2 /* YDImageViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -356,8 +371,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150977C129AF2906002F9FA2 /* YDCameraViewController.swift in Sources */,
+				150977BD29AF2794002F9FA2 /* YDCameraEnum.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				150977BC29AF2794002F9FA2 /* YDPhotoLibrary.swift in Sources */,
+				150977BB29AF2794002F9FA2 /* YDCameraManager.swift in Sources */,
+				150977C029AF2906002F9FA2 /* YDImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
